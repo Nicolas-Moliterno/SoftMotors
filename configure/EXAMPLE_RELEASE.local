@@ -1,0 +1,9 @@
+SUPPORT=/usr/local/epics-nfs/modules/R7.0.7/synApps_6_2/synApps/support
+MOTOR=$(SUPPORT)/motor-R7-2-2
+-include $(MOTOR)/modules/RELEASE.$(EPICS_HOST_ARCH).local
+# path to motorMotorSim is needed to build the IOC inside motorMotorSim, but outside motor
+MOTOR_MOTORSIM=/usr/local/epics-nfs/apps/swcmotors/motorSimApp
+LUA=$(SUPPORT)/lua-R3-0-2
+MODBUS=$(SUPPORT)/modbus-R3-2
+AUTOSAVE=$(SUPPORT)/autosave-R5-10-2
+RECCASTER=/usr/local/epics-nfs/apps/recsync/1.5_epics_7.0/stable/client
